@@ -1,5 +1,5 @@
 import Footer from './Footer';
-import Cardnot from './cardnot';
+import Cardnot from './Cardnot';
 import imagen from './noti/1.webp';
 import imagen2 from './noti/2.webp';
 import imagen3 from './noti/3.webp';
