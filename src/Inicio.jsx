@@ -1,5 +1,5 @@
 
-import Card from './card.jsx';
+import Card from './Card.jsx';
 import Footer from './Footer.jsx';
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
