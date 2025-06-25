@@ -1,5 +1,3 @@
-import React from 'react';
-import App from './App';
 import Footer from './Footer';
 import Cardnot from './cardnot';
 import imagen from './noti/1.webp';
