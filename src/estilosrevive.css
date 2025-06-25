@@ -1,0 +1,41 @@
+.revive
+{
+    margin: 30px;
+    padding: 30px;
+    display: grid;
+    width: 100%;
+    height: 450px;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "desc foto foto";
+}
+
+.revive img
+{
+    width: 100%;
+    height: fit-content;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.desc
+{
+    grid-area: desc;
+    color: white;
+    background-color: rgba(0,24,56,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.foto
+{
+    grid-area: foto;
+    justify-content: center;
+    align-content: center;
+    width:700px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}

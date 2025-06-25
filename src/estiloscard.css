@@ -1,0 +1,49 @@
+.noticia
+{
+    width: 470px;
+    height: 145px;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "fotografia textnot";
+  
+}
+
+.fotografia
+{
+    grid-area: fotografia;
+    width: 230px;
+    height: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.textnot
+{
+    grid-area: textnot;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-self: start;
+    align-content:flex-start;
+}
+
+.noticia img
+{
+    width: 100%;
+    height: fit-content;
+    justify-self: center;
+    align-self: center;
+}
+
+.noticia p
+{
+    margin: 0;
+    padding-top: 5px;
+    font-size: 18px;
+    font-weight: 650;
+    color: black;
+}

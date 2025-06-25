@@ -1,0 +1,62 @@
+.jugador
+{
+    margin: 5x;
+    padding: 5px;
+    margin-bottom: 30px;
+    display: grid;
+    width: 240px;
+    height: 280px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    justify-self: center;
+    grid-template-rows: 4fr 1fr 1fr ;
+    grid-template-areas: 
+        "foto"
+        "nombre"
+        "apellido";
+}
+
+.fotos
+{
+    grid-area: foto;
+    width: max-content;
+    height:max-content;
+    background-color: blueviolet;
+    display: flex;
+}
+
+.nombre
+{
+    grid-area: nombre;
+    width: 100%;
+    padding-left: 25px;
+    display: flex;
+    padding-top: 10px;
+    justify-self: start;
+    align-self: center;
+    color: rgb(10, 32, 100);
+}
+
+.apellido
+{
+    grid-area: apellido;
+    padding-left: 25px;
+    width: 100%;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+    color: rgb(10, 32, 100);
+}
+
+.jugador img
+{
+    width: 230px;
+    height: 180px;
+}
+
+.jugador h3
+{
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    
+}
