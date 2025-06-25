@@ -1,5 +1,4 @@
-import React from 'react';
-import App from './App';
+
 import Card from './card.jsx';
 import Footer from './Footer.jsx';
 import './index.css'
