@@ -1,0 +1,240 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f2f4f;
+  background-color: #f3f8ff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #0f2f4f;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #1b5f95;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background-color: #f3f8ff;
+}
+
+h1 {
+  font-size: clamp(1.6rem, 4vw, 2.8rem);
+  line-height: 1.1;
+}
+
+#root {
+  width: 100%;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes soft-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes nav-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.partido,
+.noticia,
+.calendario,
+.jugador,
+.revive,
+.my-2 {
+  animation: fade-up 0.55s ease-out both;
+}
+
+.navbar,
+.footer {
+  animation: soft-pop 0.45s ease-out both;
+}
+
+.main-navbar {
+  animation: nav-drop 0.55s ease-out both;
+  box-shadow: 0 6px 16px rgba(15, 47, 79, 0.2);
+}
+
+.main-navbar-nav {
+  position: relative;
+}
+
+.main-nav-item {
+  animation: fade-up 0.45s ease-out both;
+}
+
+.main-nav-item:nth-child(1) {
+  animation-delay: 0.02s;
+}
+
+.main-nav-item:nth-child(2) {
+  animation-delay: 0.07s;
+}
+
+.main-nav-item:nth-child(3) {
+  animation-delay: 0.12s;
+}
+
+.main-nav-item:nth-child(4) {
+  animation-delay: 0.17s;
+}
+
+.main-nav-item:nth-child(5) {
+  animation-delay: 0.22s;
+}
+
+.main-nav-item:nth-child(6) {
+  animation-delay: 0.27s;
+}
+
+.main-nav-item:nth-child(7) {
+  animation-delay: 0.32s;
+}
+
+.main-nav-item:nth-child(8) {
+  animation-delay: 0.37s;
+}
+
+.main-brand img {
+  transition: transform 0.25s ease;
+}
+
+.main-brand:hover img {
+  transform: scale(1.08) rotate(-2deg);
+}
+
+.main-navlink-text {
+  text-decoration: none;
+  color: darkslategrey;
+  position: relative;
+  transition: color 0.22s ease;
+}
+
+.main-navlink-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #0f2f4f;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease;
+}
+
+.main-navlink-text:hover {
+  color: #0f2f4f;
+}
+
+.main-navlink-text:hover::after {
+  transform: scaleX(1);
+}
+
+.noticia {
+  opacity: 0;
+}
+
+.noticia:nth-of-type(1) {
+  animation-delay: 0.04s;
+}
+
+.noticia:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+
+.noticia:nth-of-type(3) {
+  animation-delay: 0.16s;
+}
+
+.noticia:nth-of-type(4) {
+  animation-delay: 0.22s;
+}
+
+.noticia:nth-of-type(5) {
+  animation-delay: 0.28s;
+}
+
+.noticia:nth-of-type(6) {
+  animation-delay: 0.34s;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.55em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #0f2f4f;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #1b5f95;
+  transform: translateY(-2px);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button {
+  transition: transform 0.2s ease, border-color 0.25s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

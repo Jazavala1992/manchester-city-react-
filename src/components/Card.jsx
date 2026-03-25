@@ -1,6 +1,4 @@
-import React from 'react';
-import { useLayoutEffect } from 'react';
-import { Card, CardBody, CardTitle, CardText, CardImg, CardSubtitle, CardGroup, Button } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardText, CardImg } from 'reactstrap';
 
 const CardGroupExample = () => {
   return (

@@ -1,8 +1,7 @@
-import './estilostienda.css';
-import React from 'react';
-import imagen from './img/2.png';
-import imagen2 from './img/3.webp';
-import imagen3 from './img/4.webp';
+import '../styles/estilostienda.css';
+import imagen from '../assets/images/img/2.png';
+import imagen2 from '../assets/images/img/3.webp';
+import imagen3 from '../assets/images/img/4.webp';
 
 function Ofertas()
 {

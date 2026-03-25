@@ -1,5 +1,5 @@
-import './estiloscard.css';
-import React from 'react';
+import '../styles/estiloscard.css';
+import PropTypes from 'prop-types';
 
 function Cardnot({foto, texto}) {
     return (
@@ -9,4 +9,10 @@ function Cardnot({foto, texto}) {
         </div>
             );
         }
+
+Cardnot.propTypes = {
+    foto: PropTypes.node.isRequired,
+    texto: PropTypes.string.isRequired,
+};
+
 export default Cardnot;        

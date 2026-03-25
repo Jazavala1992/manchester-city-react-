@@ -1,5 +1,5 @@
-import './estiloseq.css';
-import React from 'react';
+import '../styles/estiloseq.css';
+import PropTypes from 'prop-types';
 
 function Jugador({foto, nombre, apellido}) {
     return (
@@ -10,5 +10,11 @@ function Jugador({foto, nombre, apellido}) {
         </div>
     );
 }
+
+Jugador.propTypes = {
+    foto: PropTypes.node.isRequired,
+    nombre: PropTypes.string.isRequired,
+    apellido: PropTypes.string.isRequired,
+};
 
 export default Jugador;

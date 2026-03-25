@@ -1,15 +1,15 @@
-import Footer from './Footer';
-import Cardnot from './Cardnot';
-import imagen from './noti/1.webp';
-import imagen2 from './noti/2.webp';
-import imagen3 from './noti/3.webp';
-import imagen4 from './noti/4.webp';
-import imagen5 from './noti/5.webp';
-import imagen6 from './noti/6.webp';
-import imagen7 from './noti/7.webp';
-import imagen8 from './noti/8.webp';
-import imagen9 from './noti/9.webp';
-import imagen10 from './noti/10.webp';
+import Footer from '../components/Footer';
+import Cardnot from '../components/Cardnot';
+import imagen from '../assets/images/noti/1.webp';
+import imagen2 from '../assets/images/noti/2.webp';
+import imagen3 from '../assets/images/noti/3.webp';
+import imagen4 from '../assets/images/noti/4.webp';
+import imagen5 from '../assets/images/noti/5.webp';
+import imagen6 from '../assets/images/noti/6.webp';
+import imagen7 from '../assets/images/noti/7.webp';
+import imagen8 from '../assets/images/noti/8.webp';
+import imagen9 from '../assets/images/noti/9.webp';
+import imagen10 from '../assets/images/noti/10.webp';
 
 function Noticias() {
   return (

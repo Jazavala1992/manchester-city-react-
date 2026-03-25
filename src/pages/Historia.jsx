@@ -1,8 +1,7 @@
-import React from 'react';
-import Footer from './Footer';
-import Acordion from './Acordion';
-import Revive from './Revive';
-import imagen from './img/1.webp';
+import Footer from '../components/Footer';
+import Acordion from '../components/Acordion';
+import Revive from '../components/Revive';
+import imagen from '../assets/images/img/1.webp';
 
 function Historia ()
 {

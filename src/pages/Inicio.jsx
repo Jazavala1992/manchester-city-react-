@@ -1,14 +1,14 @@
 
-import Card from './Card.jsx';
-import Footer from './Footer.jsx';
-import './index.css'
+import Card from '../components/Card.jsx';
+import Footer from '../components/Footer.jsx';
+import '../styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Partido from './Partido.jsx';
-import Revive from './Revive.jsx';
-import imagen from './img/ManCity.png';
-import imagen2 from './img/Liverpool.png';
-import imagen3 from './img/Chelsea.png';
-import imagen4 from './img/Revive.webp';    
+import Partido from '../components/Partido.jsx';
+import Revive from '../components/Revive.jsx';
+import imagen from '../assets/images/img/ManCity.png';
+import imagen2 from '../assets/images/img/Liverpool.png';
+import imagen3 from '../assets/images/img/Chelsea.png';
+import imagen4 from '../assets/images/img/Revive.webp';    
 
 function Inicio ()
 {

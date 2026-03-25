@@ -1,0 +1,85 @@
+/* Footer.module.css */
+@keyframes footer-rise {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer {
+    background-color: #a0c4ec;
+    width:100%;
+    min-height: 350px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 16px;
+    grid-template-areas: 
+        "uno dos tres cuatro cinco seis siete ocho "
+        "nueve diez once doce trece catorce quince dieciseis"
+        "diecisiete dieciocho diecinueve veinte veintiuno veintidos veintitres veinticuatro"
+        "veinticinco veintiseis veintisiete veintiocho veintinueve treinta treintauno treintados";
+    animation: footer-rise 0.65s ease-out both;
+}
+
+.footer-img {
+    width: min(100%, 115px);
+    height: auto;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.footer-img:hover {
+    transform: translateY(-3px) scale(1.03);
+    filter: drop-shadow(0 4px 8px rgba(15, 47, 79, 0.22));
+}
+
+@media screen and (max-width: 1000px)
+{
+    .footer
+    {
+        background-color: #a0c4ec;
+        width:100%;
+        min-height: 350px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, minmax(40px, auto));
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        grid-template-areas: 
+        "uno dos tres cuatro cinco seis siete  "
+        "nueve diez once doce trece catorce quince "
+        "diecisiete dieciocho diecinueve veinte veintiuno veintidos veintitres "
+        "veinticinco veintiseis veintisiete veintiocho veintinueve treinta treintauno "
+        "ocho dieciseis veinticuatro treintados";
+    }
+
+}
+
+@media screen and (max-width: 640px)
+{
+    .footer
+    {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "uno dos tres cuatro"
+            "cinco seis siete ocho"
+            "nueve diez once doce"
+            "trece catorce quince dieciseis"
+            "diecisiete dieciocho diecinueve veinte"
+            "veintiuno veintidos veintitres veinticuatro"
+            "veinticinco veintiseis veintisiete veintiocho"
+            "veintinueve treinta treintauno treintados";
+    }
+
+    .footer-img {
+        width: min(100%, 90px);
+    }
+}

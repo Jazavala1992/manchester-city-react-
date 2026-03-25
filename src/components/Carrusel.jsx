@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import {
   Carousel,
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
 } from 'reactstrap';
 
 const items = [
@@ -77,7 +76,7 @@ const items = [
     },
 ];
 
-function Carrusel(args) {
+function Carrusel() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -142,7 +141,6 @@ const slides = items.map((item) => {
       next={next}
       previous={previous}
       fade={true}
-      {...args}
     >
       <CarouselIndicators
         items={items}

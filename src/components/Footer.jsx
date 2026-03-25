@@ -1,8 +1,7 @@
-import React, { useLayoutEffect } from "react";
-import styles from './Footer.module.css';
+import styles from '../styles/Footer.module.css';
 
 
-function Footer(props) {
+function Footer() {
     return (
     <footer className={styles.footer}>
         <div style={{ gridArea: 'uno' }}> <img  className={styles['footer-img']} src="https://www.mancity.com/meta/media/ezedy0oz/partner_logo_okx.png?width=240&height=120" alt="" /> </div>

@@ -1,7 +1,6 @@
-import React from 'react';
-import Ofertas from './Ofertas';
-import Carrusel from './Carrusel';
-import Footer from './Footer';
+import Ofertas from '../components/Ofertas';
+import Carrusel from '../components/Carrusel';
+import Footer from '../components/Footer';
 
 function Tienda()
 {
